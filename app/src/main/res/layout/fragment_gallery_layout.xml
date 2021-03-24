@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/gallery_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_bar_height"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/gallery_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:textSize="18sp">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/gallery_img_viewer"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="40dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/home_img_gallery" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/gallery_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/gray_200"
+            android:clipToPadding="false"
+            android:clipChildren="false">
+        </androidx.viewpager2.widget.ViewPager2>
+
+    </LinearLayout>
+
+</LinearLayout>

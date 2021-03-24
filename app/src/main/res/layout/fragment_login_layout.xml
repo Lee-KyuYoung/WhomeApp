@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/login_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_bar_height"
+        android:fitsSystemWindows="true"
+        android:background="@color/white"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/whome"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:id="@+id/whome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="Whome"
+            android:textColor="@color/whome"
+            android:textSize="50dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <EditText
+            android:id="@+id/user_id"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_layout_2"
+            android:padding="@dimen/input_padding"
+            android:layout_gravity="center"
+            android:includeFontPadding="false"
+            android:hint="ID"/>
+
+        <EditText
+            android:id="@+id/user_pw"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_layout_2"
+            android:padding="@dimen/input_padding"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:includeFontPadding="false"
+            android:inputType="textPassword"
+            android:hint="PASSWORD"/>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:includeFontPadding="false"
+            android:background="@drawable/btn_basic"
+            android:textColor="@color/white"
+            android:text="Login"/>
+
+        <Button
+            android:id="@+id/join_btn"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:includeFontPadding="false"
+            android:background="@drawable/btn_basic"
+            android:textColor="@color/white"
+            android:text="회원가입"/>
+
+    </LinearLayout>
+
+</LinearLayout>

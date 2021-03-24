@@ -1,0 +1,17 @@
+<resources>
+    <dimen name="tool_bar_height">50dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="home_detail_appbar_height">250dp</dimen>
+    <dimen name="home_detail_img_width">150dp</dimen>
+    <dimen name="home_detail_img_height">150dp</dimen>
+    <dimen name="home_detail_img_margin">5dp</dimen>
+    <dimen name="view_line_margin">12dp</dimen>
+    <dimen name="view_line_height">3dp</dimen>
+    <dimen name="kakao_map_height">300dp</dimen>
+    <dimen name="kokoo_map_margin">10dp</dimen>
+    <dimen name="detail_layout_padding">10dp</dimen>
+    <dimen name="user_img_size">65dp</dimen>
+    <dimen name="input_padding">10dp</dimen>
+    <dimen name="input_text_size">14dp</dimen>
+</resources>

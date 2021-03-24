@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/my_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_info_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tool_bar_height"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_lock_24">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="비밀번호 변경"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_marginStart="10dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_line_height"
+                android:layout_marginTop="@dimen/view_line_margin"
+                android:layout_marginBottom="@dimen/view_line_margin"
+                android:background="@color/gray_200"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="현재 비밀번호"/>
+
+            <EditText
+                android:id="@+id/original_pw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_layout_2"
+                android:padding="@dimen/input_padding"
+                android:singleLine="true"
+                android:textSize="@dimen/input_text_size"
+                android:hint="현재 비밀번호"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="새 비밀번호"/>
+
+            <EditText
+                android:id="@+id/new_pw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_layout_2"
+                android:padding="@dimen/input_padding"
+                android:textSize="@dimen/input_text_size"
+                android:singleLine="true"
+                android:hint="새 비밀번호"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="새 비밀번호 확인"/>
+
+            <EditText
+                android:id="@+id/new_pw_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_layout_2"
+                android:padding="@dimen/input_padding"
+                android:singleLine="true"
+                android:textSize="@dimen/input_text_size"
+                android:layout_marginBottom="40dp"
+                android:hint="새 비밀번호 확인"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_person_24"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:text="개인정보 수정"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_line_height"
+                android:layout_marginTop="@dimen/view_line_margin"
+                android:layout_marginBottom="@dimen/view_line_margin"
+                android:background="@color/gray_200"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:singleLine="true"
+                android:text="주소"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/user_addr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_layout_2"
+                    android:padding="@dimen/input_padding"
+                    android:layout_weight="100"
+                    android:textSize="@dimen/input_text_size"
+                    android:layout_marginBottom="5dp"
+                    android:singleLine="true"
+                    android:hint="주소"/>
+
+                <Button
+                    android:id="@+id/addr_search_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="주소 검색"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/user_addr2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_layout_2"
+                android:padding="@dimen/input_padding"
+                android:textSize="@dimen/input_text_size"
+                android:singleLine="true"
+                android:hint="나머지 주소"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="휴대폰 번호"/>
+
+            <EditText
+                android:id="@+id/user_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_layout_2"
+                android:padding="@dimen/input_padding"
+                android:singleLine="true"
+                android:textSize="@dimen/input_text_size"
+                android:hint="010 0000 0000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="이메일"/>
+
+            <EditText
+                android:id="@+id/user_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_layout_2"
+                android:padding="@dimen/input_padding"
+                android:singleLine="true"
+                android:textSize="@dimen/input_text_size"
+                android:hint="ID@Example.com"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="자기소개 "/>
+
+            <EditText
+                android:id="@+id/user_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_layout"
+                android:singleLine="true"
+                android:textSize="@dimen/input_text_size"
+                android:inputType="text|textMultiLine"
+                android:lineSpacingExtra="8dp"
+                android:minLines="5"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:includeFontPadding="false"
+                android:text="프로필 이미지 "/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/round_layout"
+                android:padding="4dp">
+
+                <ImageView
+                    android:id="@+id/user_profile_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_upload"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/update_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whome"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="정보수정"/>
+
+    </LinearLayout>
+
+</ScrollView>

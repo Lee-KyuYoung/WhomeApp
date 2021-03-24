@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:padding="15dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/user_img_size"
+            android:layout_height="@dimen/user_img_size"
+            android:layout_marginBottom="3dp"
+            app:cardCornerRadius="35dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/nav_user_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_account_circle_24"
+                android:contentDescription="@string/userimg"
+                android:scaleType="centerCrop"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/login_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/require_login"
+            android:layout_marginStart="15dp"
+            android:includeFontPadding="false"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_line_height"
+        android:background="@color/gray_200"/>
+
+</LinearLayout>
